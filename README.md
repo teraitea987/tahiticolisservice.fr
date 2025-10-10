@@ -32,7 +32,7 @@ Le site vitrine présente :
 
 **Teraitea Tarihaa**  
 Micro-entrepreneur & créateur du service  
-📧 [contact@tahiticolisservice.fr](mailto:contact@tahiticolisservice.fr)  
+📧 [infos@tahiticolisservice.fr](mailto:infos@tahiticolisservice.fr)  
 🌐 [tahiticolisservice.fr](https://tahiticolisservice.fr)
 
 ---
