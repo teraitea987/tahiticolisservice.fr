@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://tahiticolisservice.fr",
+  "name": "Tahiti Colis Service",
+  "image": "https://tahiticolisservice.fr/assets/logo_fond_blanc.webp",
+  "url": "https://tahiticolisservice.fr",
+  "telephone": "+33 7 67 12 56 55",
+  "email": "infos@tahiticolisservice.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10 RUE DES CHARDONNERETS",
+    "addressLocality": "Boé",
+    "postalCode": "47550",
+    "addressCountry": "FR"
+  },
+  "description": "Service de réexpédition de colis depuis la France vers la Polynésie française. Simple, clair et transparent."
+}

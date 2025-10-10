@@ -1,0 +1,311 @@
+/* Définition des polices personnalisées */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f7fafc; /* Fond légèrement gris pour un look doux */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+/* Couleurs personnalisées pour Tailwind basées sur le logo */
+.bg-lagon-logo {
+  background-color: #29afc3;
+}
+.text-lagon-logo {
+  color: #29afc3;
+}
+.border-lagon-logo {
+  border-color: #29afc3;
+}
+.hover\:bg-lagon-logo-dark:hover {
+  background-color: #2497a8;
+}
+
+.bg-deep-blue {
+  background-color: #003d5c;
+}
+.text-deep-blue {
+  color: #003d5c;
+}
+
+.bg-corail {
+  background-color: #ff6b6b;
+}
+.text-corail {
+  color: #ff6b6b;
+}
+.hover\:bg-corail-dark:hover {
+  background-color: #b8293a;
+}
+
+/* Animation d'apparition au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Style pour le header sticky */
+.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(10px);
+}
+/* MODIFICATION: Styles pour la couleur du texte du header */
+#main-header nav a:not(.bg-corail) {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+#main-header nav a:not(.bg-corail):hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+#main-header.header-scrolled nav a:not(.bg-corail) {
+  color: #4a5568; /* text-gray-700 */
+}
+#main-header.header-scrolled nav a:not(.bg-corail):hover {
+  color: #29afc3; /* text-lagon-logo */
+}
+
+/* Enhanced navigation link hover effects */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background: linear-gradient(90deg, #29afc3, #ff6b4a);
+  transition: all 0.5s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  background: #29afc3;
+}
+
+/* Mobile menu improvements */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform-origin: top;
+}
+
+#mobile-menu:not(.hidden) {
+  max-height: 300px;
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* Mobile button improvements */
+#mobile-menu-button {
+  z-index: 1000;
+  position: relative;
+}
+
+#mobile-menu-button svg {
+  transition: all 0.3s ease;
+}
+
+#mobile-menu-button:hover svg {
+  transform: scale(1.1);
+}
+
+/* Hero section background gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #003d5c 0%, #29afc3 100%);
+}
+
+/* Animation delay classes */
+.animate-delay-02 {
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.animate-delay-03 {
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.animate-delay-04 {
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.animate-delay-05 {
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.animate-delay-06 {
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+.animate-delay-07 {
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background-color: #f7fafc;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, #003d5c 0%, #29afc3 100%);
+  color: #ffffff;
+}
+
+.page-hero-inner {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.page-back-link:hover {
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+.page-back-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.page-back-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.page-hero p {
+  max-width: 48rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.page-main {
+  flex: 1;
+  width: 100%;
+  max-width: 62rem;
+  margin: -3rem auto 0;
+  padding: 0 1.75rem 5rem;
+}
+
+.page-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 45px rgba(0, 30, 50, 0.08);
+  padding: 2.5rem clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.page-card + .page-card {
+  margin-top: 2rem;
+}
+
+.page-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #003d5c;
+  margin-bottom: 1.25rem;
+}
+
+.page-list {
+  margin: 1.25rem 0 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+  list-style-position: inside;
+}
+
+.page-list li {
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.page-footer {
+  margin-top: auto;
+  padding: 3rem 1.75rem 4rem;
+  background: #edf2f7;
+  color: #4a5568;
+}
+
+.page-footer-inner {
+  max-width: 62rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.page-footer a {
+  color: #003d5c;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.page-footer a:hover {
+  color: #29afc3;
+}
+
+@media (max-width: 768px) {
+  .page-hero-inner {
+    padding: 3rem 1.5rem 2.75rem;
+  }
+
+  .page-main {
+    margin-top: -2.5rem;
+    padding: 0 1.25rem 4rem;
+  }
+
+  .page-card {
+    border-radius: 1.25rem;
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+

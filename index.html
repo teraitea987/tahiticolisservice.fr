@@ -1,0 +1,781 @@
+﻿<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tahiti Colis Service | Relais Colis France-Tahiti | 2 000 XPF par colis
+    </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/favicon.svg" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Service de relais colis entre la France et Tahiti. Recevez vos achats en ligne directement en Polynésie française avec Tahiti Colis Service. Tarif unique 2 000 XPF par colis + frais de port."
+    />
+    <meta
+      name="keywords"
+      content="colis tahiti, relais colis france polynésie, livraison tahiti, expédition france tahiti, colis polynésie française, transport colis outre-mer, service relais colis, tahiti colis service"
+    />
+    <meta name="author" content="Tahiti Colis Service" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="fr-FR" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tahiticolisservice.fr" />
+    <meta
+      property="og:title"
+      content="Tahiti Colis Service - Relais colis France-Tahiti"
+    />
+    <meta
+      property="og:description"
+      content="Recevez vos achats en ligne depuis la France directement en Polynésie française. Service professionnel avec tarif unique de 2 000 XPF par colis."
+    />
+    <meta
+      property="og:image"
+      content="https://tahiticolisservice.fr/assets/logo_fond_blanc.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Tahiti Colis Service" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://tahiticolisservice.fr" />
+    <meta
+      name="twitter:title"
+      content="Tahiti Colis Service - Relais colis France-Tahiti"
+    />
+    <meta
+      name="twitter:description"
+      content="Service de relais colis entre la France et Tahiti. Tarif unique 2 000 XPF par colis + frais de port."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tahiticolisservice.fr/assets/logo_fond_blanc.webp"
+    />
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#29afc3" />
+    <meta name="msapplication-TileColor" content="#29afc3" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <link rel="canonical" href="https://tahiticolisservice.fr" />
+
+    <!-- Geo Location -->
+    <meta name="geo.region" content="PF" />
+    <meta name="geo.placename" content="Tahiti, Polynésie française" />
+    <meta name="geo.position" content="-17.6797;-149.4068" />
+    <meta name="ICBM" content="-17.6797, -149.4068" />
+
+    <!-- Structured Data JSON-LD loaded via scripts.js -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-gray-700">
+    <!-- HEADER / NAVIGATION -->
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- MODIFICATION: Logo intégré en Base64 -->
+        <a
+          href="#accueil"
+          class="flex items-center transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="assets/logo.webp"
+            alt="Logo Tahiti Colis Service"
+            class="h-16 md:h-20 lg:h-24 w-auto"
+          />
+          <span class="text-white text-2xl font-bold ml-2"
+            >Tahiti Colis Service</span
+          >
+        </a>
+        <nav class="hidden md:flex space-x-8 items-center">
+          <!-- MODIFICATION: Classes de couleur retirées pour être gérées par CSS -->
+          <a
+            href="#offre"
+            class="nav-link relative transition-all duration-500 hover:scale-105 font-medium hover:font-semibold"
+            >Notre Offre</a
+          >
+          <a
+            href="#processus"
+            class="nav-link relative transition-all duration-500 hover:scale-105 font-medium hover:font-semibold"
+            >Comment ça marche ?</a
+          >
+          <a
+            href="#tarifs"
+            class="nav-link relative transition-all duration-500 hover:scale-105 font-medium hover:font-semibold"
+            >Tarifs</a
+          >
+          <a
+            href="pages/faq"
+            class="nav-link relative transition-all duration-500 hover:scale-105 font-medium hover:font-semibold"
+            >FAQ</a
+          >
+          <a
+            href="#contact"
+            class="bg-corail text-white px-4 py-2 rounded-full hover:bg-corail-dark transition-all duration-500 hover:scale-105 hover:shadow-lg shadow transform hover:-translate-y-1"
+            >Contact</a
+          >
+        </nav>
+        <button
+          id="mobile-menu-button"
+          class="md:hidden transition-transform duration-300 hover:scale-110"
+        >
+          <svg
+            class="w-6 h-6 text-white transition-all duration-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Menu mobile -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white px-6 pb-4 shadow-lg"
+      >
+        <a
+          href="#offre"
+          class="block py-3 text-gray-600 hover:text-lagon-logo transition-all duration-500 hover:translate-x-3 hover:font-semibold border-b border-gray-100 hover:border-lagon-logo"
+          >Notre Offre</a
+        >
+        <a
+          href="#processus"
+          class="block py-3 text-gray-600 hover:text-lagon-logo transition-all duration-500 hover:translate-x-3 hover:font-semibold border-b border-gray-100 hover:border-lagon-logo"
+          >Comment ça marche ?</a
+        >
+        <a
+          href="#tarifs"
+          class="block py-3 text-gray-600 hover:text-lagon-logo transition-all duration-500 hover:translate-x-3 hover:font-semibold border-b border-gray-100 hover:border-lagon-logo"
+          >Tarifs</a
+        >
+        <a
+          href="pages/faq"
+          class="block py-3 text-gray-600 hover:text-lagon-logo transition-all duration-500 hover:translate-x-3 hover:font-semibold border-b border-gray-100 hover:border-lagon-logo"
+          >FAQ</a
+        >
+        <a
+          href="#contact"
+          class="block mt-4 text-center bg-corail text-white px-4 py-3 rounded-full hover:bg-corail-dark transition-all duration-500 hover:scale-105 shadow hover:shadow-lg transform hover:-translate-y-1"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        id="accueil"
+        class="min-h-screen flex items-center text-white justify-center py-20 hero-gradient"
+      >
+        <div
+          class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16"
+        >
+          <div
+            class="w-full lg:w-1/2 text-center lg:text-left order-2 lg:order-1 animate-slide-in-left"
+          >
+            <div class="max-w-2xl mx-auto lg:mx-0">
+              <h1
+                class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 tracking-tight animate-fade-in animate-delay-02"
+              >
+                Recevez vos colis depuis la France<br />
+                <span class="text-corail">jusqu'à Tahiti</span>, en toute
+                simplicité.
+              </h1>
+              <p
+                class="text-base md:text-lg lg:text-xl mb-8 text-white text-opacity-90 animate-fade-in animate-delay-04"
+              >
+                Le pont entre vos boutiques préférées et votre domicile en
+                Polynésie.
+              </p>
+              <a
+                href="#contact"
+                class="bg-corail text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-corail-dark transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-lg inline-block animate-slide-up animate-delay-06"
+              >
+                Commencer maintenant
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-full lg:w-1/2 text-center order-1 lg:order-2 animate-slide-in-right"
+          >
+            <img
+              src="assets/hero.webp"
+              alt="Tahiti Colis Service"
+              class="w-full h-auto object-contain max-w-sm md:max-w-md lg:max-w-lg xl:max-w-4xl mx-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTRE OFFRE -->
+      <section id="offre" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center reveal animate-fade-in">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-deep-blue mb-4 animate-slide-up"
+          >
+            Une offre simple, claire et transparente
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            Pas de frais cachés, pas de complications. Un service unique pour
+            tous vos besoins.
+          </p>
+
+          <div
+            class="flex flex-col md:flex-row items-center justify-center bg-lagon-logo text-white p-6 md:p-8 lg:p-12 rounded-2xl shadow-xl max-w-4xl mx-auto hover:shadow-2xl transition-all duration-300 animate-slide-up animate-delay-02"
+          >
+            <div class="text-center md:text-left md:w-2/3">
+              <h3 class="text-xl md:text-2xl font-bold mb-4">
+                Notre tarif de service : 2 000 XPF par colis
+              </h3>
+              <p class="mb-6">
+                À cela s'ajoutent uniquement les frais réels de La Poste
+                (Colissimo Outre-Mer). Les éventuels frais de douane restent à
+                votre charge.
+              </p>
+              <h4 class="font-semibold mb-2">
+                Ce qui est inclus dans notre service :
+              </h4>
+              <ul class="space-y-2 list-inside list-none">
+                <li class="flex items-start">
+                  <span class="text-corail mr-2">✔</span> Réception et contrôle
+                  visuel de vos articles.
+                </li>
+                <li class="flex items-start">
+                  <span class="text-corail mr-2">✔</span> Photos sur demande
+                  pour vérifier votre commande.
+                </li>
+                <li class="flex items-start">
+                  <span class="text-corail mr-2">✔</span> Reconditionnement
+                  léger pour optimiser l'envoi.
+                </li>
+                <li class="flex items-start">
+                  <span class="text-corail mr-2">✔</span> Regroupement de
+                  plusieurs colis en un seul pour économiser.
+                </li>
+                <li class="flex items-start">
+                  <span class="text-corail mr-2">✔</span> Préparation de la
+                  déclaration de douane (CN23).
+                </li>
+                <li class="flex items-start">
+                  <span class="text-corail mr-2">✔</span> Suivi de votre colis
+                  jusqu'à sa livraison à Tahiti.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 md:mt-0 md:ml-8 lg:ml-12 flex-shrink-0">
+              <!-- Icône Colis SVG -->
+              <svg
+                class="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 text-white opacity-80 mx-auto animate-pulse-gentle"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.6,5.2l-7.9-3.9C13.3,1.1,12.7,1,12,1s-1.3,0.1-1.7,0.3L2.4,5.2C2.2,5.3,2,5.6,2,5.9v12.3c0,0.3,0.2,0.6,0.4,0.7 l7.9,3.9C10.7,22.9,11.3,23,12,23s1.3-0.1,1.7-0.3l7.9-3.9c0.3-0.1,0.4-0.4,0.4-0.7V5.9C22,5.6,21.8,5.3,21.6,5.2z M12,2.8 l6.4,3.2L12,9.2L5.6,6L12,2.8z M4,7.4l7,3.5v10.4l-7-3.5V7.4z M13,21.3V10.9l7-3.5v10.4L13,21.3z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT ÇA MARCHE ? (MODIFIÉ) -->
+      <section id="processus" class="py-20">
+        <div class="container mx-auto px-6 text-center reveal animate-fade-in">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-deep-blue mb-4 animate-slide-up"
+          >
+            Un processus simple en 4 étapes
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16">
+            Recevoir vos colis n'a jamais été aussi facile.
+          </p>
+
+          <!-- MODIFICATION: Ajout de lg:items-stretch pour uniformiser la hauteur des cartes -->
+          <div
+            class="flex flex-col lg:flex-row lg:items-stretch justify-between gap-6 md:gap-8 lg:gap-4"
+          >
+            <!-- Étape 1 -->
+            <div
+              class="w-full lg:w-1/4 text-center animate-slide-up animate-delay-1"
+            >
+              <div
+                class="bg-white p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-lagon-logo h-full group"
+              >
+                <div class="flex items-center justify-center mb-4">
+                  <svg
+                    class="w-12 h-12 text-lagon-logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c.51 0 .962-.343 1.087-.835l1.823-6.442a.75.75 0 00-.11-.643l-2.44-3.18a.75.75 0 00-.58-.26H6.162M15 15.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-deep-blue">
+                  Étape 1 : Commandez
+                </h3>
+                <p class="text-gray-600">
+                  Faites vos achats sur vos sites préférés comme d'habitude.
+                </p>
+              </div>
+            </div>
+
+            <!-- Connector -->
+            <div
+              class="hidden lg:flex items-center transform -rotate-90 lg:rotate-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-lagon-logo opacity-30"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+
+            <!-- Étape 2 -->
+            <div
+              class="w-full lg:w-1/4 text-center animate-slide-up animate-delay-03"
+            >
+              <div
+                class="bg-white p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-lagon-logo h-full group"
+              >
+                <div class="flex items-center justify-center mb-4">
+                  <svg
+                    class="w-12 h-12 text-lagon-logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5-1.5-.5M6.75 7.5l4.5-1.636M6.75 7.5V3.545m0 6.205v6.205m0 0a2.25 2.25 0 002.25 2.25h1.5a2.25 2.25 0 002.25-2.25m-7.5 0v-6.205"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-deep-blue">
+                  Étape 2 : Faites livrer
+                </h3>
+                <p class="text-gray-600">
+                  Utilisez notre adresse en France comme adresse de livraison.
+                </p>
+              </div>
+            </div>
+
+            <!-- Connector -->
+            <div
+              class="hidden lg:flex items-center transform -rotate-90 lg:rotate-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-lagon-logo opacity-30"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+
+            <!-- Étape 3 -->
+            <div
+              class="w-full lg:w-1/4 text-center animate-slide-up animate-delay-05"
+            >
+              <div
+                class="bg-white p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-lagon-logo h-full group"
+              >
+                <div class="flex items-center justify-center mb-4">
+                  <svg
+                    class="w-12 h-12 text-lagon-logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 16.5c0 .377-.214.726-.532.898l-7.5 4.125a.75.75 0 01-.936 0l-7.5-4.125A1.125 1.125 0 013 16.5v-9A1.125 1.125 0 014.032 6.6l7.5 4.125a.75.75 0 00.936 0l7.5-4.125A1.125 1.125 0 0121 7.5v9z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M12 12.75v9"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-deep-blue">
+                  Étape 3 : Nous préparons
+                </h3>
+                <p class="text-gray-600">
+                  Nous réceptionnons, regroupons et reconditionnons vos colis.
+                </p>
+              </div>
+            </div>
+
+            <!-- Connector -->
+            <div
+              class="hidden lg:flex items-center transform -rotate-90 lg:rotate-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-lagon-logo opacity-30"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+
+            <!-- Étape 4 -->
+            <div
+              class="w-full lg:w-1/4 text-center animate-slide-up animate-delay-07"
+            >
+              <div
+                class="bg-white p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-lagon-logo h-full group"
+              >
+                <div class="flex items-center justify-center mb-4">
+                  <svg
+                    class="w-12 h-12 text-lagon-logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-deep-blue">
+                  Étape 4 : Recevez
+                </h3>
+                <p class="text-gray-600">
+                  Votre colis arrive directement chez vous, en Polynésie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TARIFS -->
+      <section id="tarifs" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center reveal animate-fade-in">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-deep-blue mb-4 animate-slide-up"
+          >
+            Exemples de tarifs
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            Voici quelques estimations pour vous donner une idée du coût total
+            (frais de service + frais de port). Les tarifs Colissimo sont
+            indicatifs et peuvent varier.
+          </p>
+
+          <div
+            class="max-w-2xl mx-auto overflow-x-auto animate-slide-up animate-delay-02"
+          >
+            <table
+              class="w-full text-left border-collapse rounded-lg shadow-lg min-w-[500px] hover:shadow-xl transition-shadow duration-300"
+            >
+              <thead class="bg-lagon-logo text-white">
+                <tr>
+                  <th class="p-2 md:p-4 font-semibold text-sm md:text-base">
+                    Poids du colis
+                  </th>
+                  <th class="p-2 md:p-4 font-semibold text-sm md:text-base">
+                    Frais de service
+                  </th>
+                  <th class="p-2 md:p-4 font-semibold text-sm md:text-base">
+                    Frais de port Colissimo (estimés)
+                  </th>
+                  <th
+                    class="p-2 md:p-4 font-semibold text-corail text-sm md:text-base"
+                  >
+                    Total estimé
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr class="border-b">
+                  <td
+                    class="p-2 md:p-4 font-medium text-deep-blue text-sm md:text-base"
+                  >
+                    1 kg
+                  </td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">2 000 XPF</td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">2 379 XPF</td>
+                  <td
+                    class="p-2 md:p-4 font-bold text-lagon-logo text-sm md:text-base"
+                  >
+                    4 379 XPF
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td
+                    class="p-2 md:p-4 font-medium text-deep-blue text-sm md:text-base"
+                  >
+                    2 kg
+                  </td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">2 000 XPF</td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">4 203 XPF</td>
+                  <td
+                    class="p-2 md:p-4 font-bold text-lagon-logo text-sm md:text-base"
+                  >
+                    6 203 XPF
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td
+                    class="p-2 md:p-4 font-medium text-deep-blue text-sm md:text-base"
+                  >
+                    5 kg
+                  </td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">2 000 XPF</td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">7 024 XPF</td>
+                  <td
+                    class="p-2 md:p-4 font-bold text-lagon-logo text-sm md:text-base"
+                  >
+                    9 024 XPF
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="p-2 md:p-4 font-medium text-deep-blue text-sm md:text-base"
+                  >
+                    10 kg
+                  </td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">2 000 XPF</td>
+                  <td class="p-2 md:p-4 text-sm md:text-base">13 757 XPF</td>
+                  <td
+                    class="p-2 md:p-4 font-bold text-lagon-logo text-sm md:text-base"
+                  >
+                    15 757 XPF
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFOS PRATIQUES / DOUANE -->
+      <section id="infos" class="py-20">
+        <div class="container mx-auto px-6 reveal animate-fade-in">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-deep-blue mb-8 text-center animate-slide-up"
+          >
+            Infos pratiques & Douane
+          </h2>
+          <div
+            class="grid md:grid-cols-2 gap-8 md:gap-12 bg-white p-6 md:p-8 lg:p-10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slide-up animate-delay-02"
+          >
+            <div>
+              <h3
+                class="text-xl md:text-2xl font-semibold mb-4 text-lagon-logo flex items-center"
+              >
+                <!-- Icône Douane SVG -->
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"
+                  />
+                </svg>
+                Frais de douane
+              </h3>
+              <p class="text-gray-600">
+                Les taxes et droits de douane à l'arrivée en Polynésie française
+                sont à la charge du client. Ils sont calculés sur la valeur des
+                marchandises et ne sont pas inclus dans nos tarifs. Nous
+                remplissons la déclaration CN23 pour vous, mais le paiement
+                final vous incombe lors de la réception.
+              </p>
+            </div>
+            <div>
+              <h3
+                class="text-xl md:text-2xl font-semibold mb-4 text-corail flex items-center"
+              >
+                <!-- Icône Interdit SVG -->
+                <svg
+                  class="w-6 h-6 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM17 7.59L15.41 6 12 9.41 8.59 6 7 7.59 10.41 11 7 14.41 8.59 16 12 12.59 15.41 16 17 14.41 13.59 11 17 7.59z"
+                  />
+                </svg>
+                Produits interdits
+              </h3>
+              <p class="text-gray-600 mb-2">
+                Pour des raisons de sécurité et de réglementation, nous ne
+                pouvons pas expédier les produits suivants :
+              </p>
+              <ul class="list-disc list-inside text-gray-600 space-y-1">
+                <li>Alcool et tabac</li>
+                <li>Denrées périssables</li>
+                <li>
+                  Produits dangereux ou inflammables (Parfums, Vernis à
+                  ongles...)
+                </li>
+                <li>Batteries au lithium non conformes ou seules</li>
+                <li>Armes, contrefaçons, et tout produit illégal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="py-20 bg-lagon-logo text-white">
+        <div class="container mx-auto px-6 text-center reveal animate-fade-in">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">
+            Contactez-nous
+          </h2>
+          <p class="text-lg mb-12 max-w-2xl mx-auto">
+            Une question ? Un projet particulier ? Envoyez-nous un message. Nous
+            vous répondons au plus vite !
+          </p>
+          <a
+            href="mailto:infos@tahiticolisservice.fr"
+            class="underline font-semibold text-white hover:text-corail"
+            >infos@tahiticolisservice.fr</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-deep-blue text-white py-6">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300 py-4 text-center justify-items-center"
+        >
+          <!-- A propos / tagline -->
+          <div>
+            <h3 class="text-white font-semibold mb-3">Tahiti Colis Service</h3>
+            <p class="text-sm">
+              Service de réexpédition de colis depuis la France vers la
+              Polynésie française. Simple, clair et transparent.
+            </p>
+            <p class="text-sm mt-2">Copyright 2025. Tous droits réservés.</p>
+          </div>
+
+          <!-- Pages légales -->
+          <div>
+            <h3 class="text-white font-semibold mb-3">
+              &#9878;&#65039; Pages légales obligatoires
+            </h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="pages/mentions-legales/" class="hover:text-white"
+                  >Mentions légales</a
+                >
+              </li>
+              <li>
+                <a href="pages/cgu" class="hover:text-white"
+                  >CGU &ndash; Conditions Générales d'Utilisation</a
+                >
+              </li>
+              <li>
+                <a href="pages/cgv" class="hover:text-white"
+                  >CGV &ndash; Conditions Générales de Vente</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/politique-confidentialite"
+                  class="hover:text-white"
+                  >Politique de confidentialité (RGPD)</a
+                >
+              </li>
+              <li>
+                <a href="pages/cookies" class="hover:text-white"
+                  >Politique cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-4 text-center text-gray-400 text-xs"
+        >
+          <p>
+            Directeur de la publication : Teraitea TARIHAA &ndash; Hébergeur :
+            IONOS SARL, 7 place de la Gare &ndash; BP 70109 &ndash; 57201
+            Sarreguemines Cedex &ndash; Téléphone : 0970 808 911
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
