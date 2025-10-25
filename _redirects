@@ -1,0 +1,16 @@
+# — Canonical host + HTTPS (forcer domaine sans www)
+http://tahiticolisservice.fr/*             https://tahiticolisservice.fr/:splat   301!
+https://www.tahiticolisservice.fr/*        https://tahiticolisservice.fr/:splat   301!
+
+# — Redirections des pages signalées en 404 vers les sections de la page d’accueil
+/contact              /#contact             301
+/tarifs               /#tarifs              301
+/offre                /#offre               301
+/infos-pratiques      /#infos-pratiques     301
+
+# — Bloquer l’ancienne URL Cloudflare d’obfuscation d’e-mail
+/cdn-cgi/*            -                     410!
+
+# — Fallback SPA (si site en HTML/JS “one-page”)
+/*                    /index.html           200
+Q
