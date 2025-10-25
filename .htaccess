@@ -1,10 +1,17 @@
+RewriteEngine On
+Redirect 301 /tiktok https://www.tiktok.com/@tahiticolisservice
+Redirect 301 /facebook https://www.facebook.com/profile.php?id=61580174516666
+
 # Redirection HTTPS
+
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Empêcher le listing des répertoires
+
 Options -Indexes
 
 # Rediriger les erreurs
+
 ErrorDocument 404 /404.html
