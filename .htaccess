@@ -1,0 +1,3 @@
+RewriteEngine On
+Redirect 301 /tiktok https://www.tiktok.com/@tahiticolisservice
+Redirect 301 /facebook https://www.facebook.com/profile.php?id=61580174516666

@@ -696,19 +696,98 @@
 
       <!-- CONTACT -->
       <section id="contact" class="py-20 bg-lagon-logo text-white">
-        <div class="container mx-auto px-6 text-center reveal animate-fade-in">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">
-            Contactez-nous
-          </h2>
-          <p class="text-lg mb-12 max-w-2xl mx-auto">
-            Une question ? Un projet particulier ? Envoyez-nous un message. Nous
-            vous répondons au plus vite !
-          </p>
-          <a
-            href="mailto:infos@tahiticolisservice.fr"
-            class="underline font-semibold text-white hover:text-corail"
-            >infos@tahiticolisservice.fr</a
+        <div class="container mx-auto px-6">
+          <div
+            class="reveal animate-fade-in max-w-5xl mx-auto grid gap-12 md:grid-cols-2 items-start"
           >
+            <div class="space-y-6">
+              <h2 class="text-3xl md:text-4xl font-bold animate-slide-up">
+                Contactez-nous
+              </h2>
+              <p class="text-lg text-white/90">
+                Une question sur nos services ou un besoin particulier ?
+                Partagez-nous les détails ci-dessous et nous reviendrons vers
+                vous sous 24 h.
+              </p>
+              <div class="space-y-2 text-white/80 text-base">
+                <p>
+                  Vous préférez un email direct ?
+                  <a
+                    href="mailto:infos@tahiticolisservice.fr"
+                    class="font-semibold underline hover:text-white"
+                    >infos@tahiticolisservice.fr</a
+                  >
+                </p>
+              </div>
+            </div>
+            <form
+              action="https://formspree.io/f/xjkeggpq"
+              method="POST"
+              class="bg-white text-gray-700 rounded-2xl shadow-2xl p-8 space-y-6"
+            >
+              <div class="space-y-1">
+                <label for="contact-nom" class="block text-sm font-semibold"
+                  >Nom complet</label
+                >
+                <input
+                  id="contact-nom"
+                  name="nom"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-corail focus:border-corail transition-all"
+                  placeholder="Votre nom et prénom"
+                />
+              </div>
+              <div class="space-y-1">
+                <label for="contact-email" class="block text-sm font-semibold"
+                  >Adresse email</label
+                >
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-corail focus:border-corail transition-all"
+                  placeholder="email@exemple.com"
+                />
+              </div>
+              <div class="space-y-1">
+                <label for="contact-message" class="block text-sm font-semibold"
+                  >Message</label
+                >
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-corail focus:border-corail transition-all resize-none"
+                  placeholder="Expliquez votre demande..."
+                ></textarea>
+              </div>
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nouvelle demande depuis tahiticolisservice.fr"
+              />
+              <button
+                type="submit"
+                class="w-full bg-corail text-white font-semibold py-3 rounded-lg shadow-lg hover:bg-corail-dark transition-all duration-300 hover:scale-[1.01] hover:shadow-xl"
+              >
+                Envoyer le message
+              </button>
+              <p class="text-xs text-gray-500 text-center">
+                En envoyant ce formulaire, vous acceptez que nous utilisions vos
+                données pour vous répondre, conformément à notre
+                <a
+                  href="pages/politique-confidentialite"
+                  class="font-medium text-corail hover:text-corail-dark"
+                  >politique de confidentialité</a
+                >.
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
