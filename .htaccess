@@ -1,16 +1,15 @@
 RewriteEngine On
-Redirect 301 /tiktok https://www.tiktok.com/@tahiticolisservice
-Redirect 301 /facebook https://www.facebook.com/profile.php?id=61580174516666
-# Redirection HTTPS
 
-RewriteEngine On
+# Redirect social shortcuts to external profiles
+RewriteRule ^tiktok/?$ https://www.tiktok.com/@tahiticolisservice [R=301,L,NC]
+RewriteRule ^facebook/?$ https://www.facebook.com/profile.php?id=61580174516666 [R=301,L,NC]
+
+# Force HTTPS
 RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-# Empêcher le listing des répertoires
-
+# Prevent directory listings
 Options -Indexes
 
-# Rediriger les erreurs
-
+# Custom 404 page
 ErrorDocument 404 /404.html
