@@ -1,10 +1,6 @@
 RewriteEngine On
 Redirect 301 /tiktok https://www.tiktok.com/@tahiticolisservice
 Redirect 301 /facebook https://www.facebook.com/profile.php?id=61580174516666
-<<<<<<< HEAD
-
-=======
->>>>>>> e38f55cc58f4e31868bd85e53753adfc8c7e9ba1
 # Redirection HTTPS
 
 RewriteEngine On
