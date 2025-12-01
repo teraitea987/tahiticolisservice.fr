@@ -42,6 +42,33 @@ h6 {
   background-color: #b8293a;
 }
 
+.xmas-banner {
+  background: linear-gradient(120deg, #7b1b36 0%, #ff6b6b 55%, #ffc371 100%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.xmas-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.25) 1px,
+      transparent 1px
+    ),
+    radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 180px 180px, 120px 120px;
+  background-position: 0 0, 60px 60px;
+  pointer-events: none;
+}
+.xmas-banner .container {
+  position: relative;
+  z-index: 1;
+}
+.xmas-banner .text-gold {
+  color: #ffe28a;
+}
+
 /* Animation d'apparition au scroll */
 .reveal {
   opacity: 0;
