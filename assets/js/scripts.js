@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.getElementById("mobile-menu");
   const mobileButton = header?.querySelector("#mobile-menu-button svg");
   const allNavLinks = document.querySelectorAll('a[href^="#"]');
+  const holidayModal = document.getElementById("holiday-modal");
+  const holidayModalClose = document.getElementById("holiday-modal-close");
 
   // Header scroll transition (critical for UX)
   function handleScroll() {
@@ -89,6 +91,60 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial call
   handleScroll();
+
+  // Holiday modal (seasonal promotion)
+  if (holidayModal) {
+    const shouldShowHolidayModal = (() => {
+      try {
+        return !sessionStorage.getItem("tcsHolidayModalClosed");
+      } catch (error) {
+        return true;
+      }
+    })();
+
+    const persistHolidayModalClose = () => {
+      try {
+        sessionStorage.setItem("tcsHolidayModalClosed", "1");
+      } catch (error) {
+        // Ignore storage errors (private mode, etc.)
+      }
+    };
+
+    const openHolidayModal = () => {
+      holidayModal.classList.remove("hidden");
+      holidayModal.setAttribute("aria-hidden", "false");
+      document.body?.classList.add("overflow-hidden");
+      holidayModalClose?.focus({ preventScroll: true });
+    };
+
+    const closeHolidayModal = () => {
+      holidayModal.classList.add("hidden");
+      holidayModal.setAttribute("aria-hidden", "true");
+      document.body?.classList.remove("overflow-hidden");
+      persistHolidayModalClose();
+    };
+
+    if (shouldShowHolidayModal) {
+      setTimeout(openHolidayModal, 800);
+    }
+
+    holidayModalClose?.addEventListener("click", closeHolidayModal);
+    holidayModal.addEventListener("click", (event) => {
+      if (event.target === holidayModal) {
+        closeHolidayModal();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !holidayModal.classList.contains("hidden")) {
+        closeHolidayModal();
+      }
+    });
+    holidayModal
+      .querySelectorAll("[data-close-holiday-modal]")
+      .forEach((trigger) => {
+        trigger.addEventListener("click", closeHolidayModal);
+      });
+  }
 
   // Defer non-critical features
   requestIdleCallback(() => loadNonCriticalFeatures(), { timeout: 2000 });

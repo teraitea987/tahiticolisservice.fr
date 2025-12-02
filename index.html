@@ -88,6 +88,88 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="text-gray-700">
+    <div
+      id="holiday-modal"
+      class="fixed inset-0 z-[9999] hidden flex items-center justify-center bg-black/70 px-4 py-10 backdrop-blur-sm"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="holiday-modal-title"
+      aria-hidden="true"
+    >
+      <div
+        class="relative w-full max-w-3xl overflow-hidden rounded-[32px] bg-white shadow-2xl md:max-w-4xl"
+      >
+        <button
+          id="holiday-modal-close"
+          type="button"
+          class="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-neutral-900/80 text-white transition hover:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-corail"
+          aria-label="Fermer l'offre de Noël"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div class="grid gap-6 md:grid-cols-2 md:min-h-[390px]">
+          <div
+            class="flex flex-col justify-center bg-gradient-to-br from-rose-500 via-red-500 to-amber-400 p-8 text-white"
+          >
+            <p class="text-sm uppercase tracking-[0.3em] text-white/80">
+              Spécial Noël
+            </p>
+            <h2
+              id="holiday-modal-title"
+              class="mt-2 text-3xl font-bold leading-tight sm:text-4xl"
+            >
+              Livraison sereine pour les fêtes
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-white/90">
+              Confiez vos cadeaux à Tahiti Colis Service et assurez-vous de les
+              recevoir à temps. Frais de service réduits à 10 &euro; par colis
+              (hors frais de port) pour toute commande passée avant le 31
+              décembre.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center space-y-4 px-8 py-10">
+            <p class="text-lg font-semibold text-gray-800">
+              📦 Offre spéciale&nbsp;: frais de service fixés à 10 &euro; pour
+              les commandes validées jusqu'au 31 décembre.
+            </p>
+            <p class="text-gray-600">
+              Nous optimisons l’acheminement de vos colis et vous informons à
+              chaque étape. Places limitées pour garantir un service express.
+            </p>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#contact"
+                data-close-holiday-modal="true"
+                class="flex flex-1 items-center justify-center rounded-full bg-corail px-6 py-3 text-center font-semibold text-white shadow-lg transition hover:bg-corail-dark hover:shadow-xl"
+                >Réserver un envoi</a
+              >
+              <a
+                href="pages/faq"
+                class="flex flex-1 items-center justify-center rounded-full border border-gray-300 px-6 py-3 text-center font-semibold text-gray-800 transition hover:border-gray-500 hover:text-black"
+                >Voir la FAQ</a
+              >
+            </div>
+            <p class="text-xs text-gray-500">
+              Offre valable jusqu’au 31/12 sur les frais de service. Après cette
+              date, retour au tarif standard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- HEADER / NAVIGATION -->
     <header
       id="main-header"
